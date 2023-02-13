@@ -164,6 +164,7 @@
   <body>
     <center><div class="button-wrapper" style="margin: 15%;">
         <button id="create" class="console-button">Click For About:Blank</button>
+        <h1 id="url-target"></h1>
     </div></center>
       
       
@@ -171,7 +172,7 @@
       var url = document.getElementById("url-target");
       var urlObj = new window.URL(window.location.href);
       document.getElementById("create").onclick = function () {
-        document.getElementById('url-target').value = 'Enter Url Here';
+        document.getElementById('url-target').value = 'https://auramath.onrender.com/';
         if (url.value.substring(0, 8) !== "https://" && url.value.substring(0, 7) !== "http://") {
           url.value = "https://" + url.value.split("https://").pop();
         } else if (url.value.substring(0, 7) == "http://") {
@@ -196,5 +197,3 @@
     </script>
   </body>
 </html>
-message.txt
-6 KB
